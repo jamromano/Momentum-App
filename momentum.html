@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Momentum App</title>
+    <link rel="stylesheet" href="momentumstyles.css">
+    </head>
+    <body>
+        
+        <div class="main">
+            <!-- Time -->
+            <h1 id="time"></h1>
+
+            <!-- Greeting and Name -->
+            <div class="greeting">
+                <h2 id="greeting">Good morning, _____!</h2>
+                <input type="text" id="name" placeholder="Enter your name here">
+                <!-- <button id="nameButton">Submit</button> -->
+            </div>      
+
+        <!--Focus and Tasks -->
+        <div class="focus">
+            <h3>What's your main focus for today?</h3>
+            <input type="text" id="newFocus" placeholder="Enter your focus here">
+            <!-- <button id="submitFocus">Submit</button> -->
+            <h2 id="focusDisplay" class="focus-display"></h2>
+            <div id="focusError" class="errorMsg">Enter your focus for today</div>
+        </div>
+        </div>
+
+        <div class="tasks">
+            <h4 id="tasksTitle">Tasks</h4>
+            <div class="popupTask">
+                <h4>Tasks</h4>
+            <input type="text" id="newTask" placeholder="Add new task">
+            <button id="addTask">+</button>
+            <div id="taskError" class="errorMsg"></div>
+            <div id="taskList"></div>
+            </div>
+        </div>
+
+          <!-- Quote -->
+        <div class="quote">
+            <div id="quoteToday"></div>
+        </div>
+            <h4 id="addNewQuote">Quotes</h4>
+            <div class="popupQuote">
+                <h4>Add Quote</h4>
+            <input type="text" id="newQuote" placeholder="Enter quote here">
+            <button id="addQuote">+</button>
+            <div id="quoteError" class="errorMsg"></div>
+            </div>
+        </div>
+
+        <script src="momentumjs.js"></script>
+    </body>
+</html>
